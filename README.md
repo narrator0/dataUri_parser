@@ -17,7 +17,7 @@ gem install dataUri_parser
 
 ### Output dataURI into a file
 
-```
+```ruby
 require 'dataUri_parser'
 
 DataUriParser.pares(dataURI, './test.jpg')
@@ -26,7 +26,7 @@ DataUriParser.pares(dataURI, './test.jpg')
 
 ### Input data to dataURI
 
-```
+```ruby
 require 'dataUri_parser'
 
 dataUri = DataUriParser.toDataUri('./output.jpg', 'image/jpg')
