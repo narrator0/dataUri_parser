@@ -7,5 +7,6 @@ Gem::Specification.new do |s|
   s.authors     = ["Arfullight"]
   s.email       = 'tmimvhuang@gmail.com'
   s.files       = ["lib/dataUri_parser.rb"]
-  s.license       = 'MIT'
+  s.homepage    = "https://github.com/narrator0/dataUri_parser"
+  s.license     = 'MIT'
 end

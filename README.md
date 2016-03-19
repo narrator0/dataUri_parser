@@ -8,6 +8,32 @@ The is a ruby gem that deals with dataURIs, which will encode and decode files w
 
 I'm on my way of develope. Will write this after its more complete.
 
+### Install
+
+```
+gem install dataUri_parser
+
+```
+
+### Output dataURI into a file
+
+```
+require 'dataUri_parser'
+
+DataUriParser.pares(dataURI, './test.jpg')
+
+```
+
+### Input data to dataURI
+
+```
+require 'dataUri_parser'
+
+dataUri = DataUriParser.toDataUri('./output.jpg', 'image/jpg')
+```
+
+> note that the second param is the <mediatype> in dataURI
+
 ## License
 
 (The MIT License)
