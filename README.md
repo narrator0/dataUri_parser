@@ -32,7 +32,7 @@ require 'dataUri_parser'
 dataUri = DataUriParser.toDataUri('./output.jpg', 'image/jpg')
 ```
 
-> note that the second param is the <mediatype> in dataURI
+> note that the second param is the \<mediatype\> in dataURI
 
 ## License
 
