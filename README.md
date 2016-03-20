@@ -20,7 +20,7 @@ gem install dataUri_parser
 ```ruby
 require 'dataUri_parser'
 
-DataUriParser.pares(dataURI, './test.jpg')
+DataUriParser.parse(dataURI, './test.jpg')
 
 ```
 
