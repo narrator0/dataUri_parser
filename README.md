@@ -10,29 +10,34 @@ I'm on my way of develope. Will write this after its more complete.
 
 ### Install
 
-```
-gem install dataUri_parser
 
-```
+`gem install dataUri_parser`
+
+then in your code
+
+`require 'dataUri_parser'`
+
 
 ### Output dataURI into a file
 
 ```ruby
-require 'dataUri_parser'
 
-DataUriParser.parse(dataURI, './test.jpg')
+dataUriObj = DataUri.new(dataURI)
+
+dataUriObj.decodeToFile('./target.jpg')
 
 ```
 
 ### Input data to dataURI
 
 ```ruby
-require 'dataUri_parser'
 
 dataUri = DataUriParser.toDataUri('./output.jpg', 'image/jpg')
 ```
 
-> note that the second param is the \<mediatype\> in dataURI
+> This returns a DataUri obj, use `dataUriObj.decodeToFile(target)` to output to file or do anything you want.
+
+> Note that the second param is the \<mediatype\> in dataURI
 
 ## License
 
